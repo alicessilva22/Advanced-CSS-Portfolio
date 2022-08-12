@@ -63,6 +63,7 @@ footer {
     padding: 10px;
     margin: 20px;
     flex: 0 0 400px;
+    box-shadow: 10px 10px 5px #13293d;
 }
 
 .card header {
@@ -72,11 +73,6 @@ footer {
 .card img {
     width: 100%;
 }
-
-.text-right {
-    text-align: right;
-}
-
 
 #contact {
     position: fixed;
