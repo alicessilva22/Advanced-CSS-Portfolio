@@ -12,29 +12,66 @@ body {
 
 header {
     padding: 40px;
+    text-align: center;
     background-color: #f0ead6;
 }
 
-aside {
-    float: left;
-    flex: 30%;
-    background-color: #b9c6ae;
-    padding: 20px;
+nav {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+nav a {
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+main {
+    display: flex;
     flex-wrap: wrap;
-    border-style: solid;
+}
+
+aside {
+    flex: 1;
+    background-color: #b9c6ae;
+    padding: 80px;
+    text-align: center;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: cornsilk;
+    color: darkblue;
+}
+
+.projects {
+    flex: 6;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card {
     border-style: solid;
     border-width: 1px;
+    border-radius: 10px;
     padding: 10px;
-    float: left;
-    width: 25%;
-  }
-  
-  .card header {
+    margin: 20px;
+    flex: 0 0 400px;
+}
+
+.card header {
     padding: 20px;
-  }
+}
+
+.card img {
+    width: 100%;
+}
 
 .text-right {
     text-align: right;
@@ -48,16 +85,21 @@ aside {
     border-style: solid;
 }
 
-footer {
-    line-height: 40px;
-    color: darkblue;
-    background-color: cornsilk;
-    text-align: center;
-    float: bottom;
-}
 
-.me {
+#me {
     width: 150px;
     height: 150px;
     border-radius: 8px;
+}
+
+@media screen and (max-width: 992px) {
+    .card {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
 }
